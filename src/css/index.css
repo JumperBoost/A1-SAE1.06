@@ -1,0 +1,35 @@
+
+/*structure*/
+body{
+    background-color: rebeccapurple;
+}
+
+
+main {
+    text-align: center;
+}
+
+main > * {
+    margin: 5px 0 0 0;
+}
+
+main > h1 {
+    color: red;
+}
+/*titres*/
+h1{
+
+}
+
+h2{
+
+}
+
+/*menu déroulant*/
+nav{
+    margin:auto;
+}
+
+div{
+    
+}
