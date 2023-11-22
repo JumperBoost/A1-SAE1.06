@@ -1,45 +1,41 @@
-
-/*structure*/
-body{
-    background-color: rebeccapurple;
-}
-
-
 main {
+    margin-top: 115vh;
+}
+
+/* Présentation principale */
+
+main > #presentation-bg {
+    background-image: url("../img/presentation1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main > #presentation-bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+main > #presentation, main > #presentation-bg {
     text-align: center;
+    position: absolute;
+    height: 105%;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }
 
-main > * {
-    margin: 5px 0 0 0;
-}
-
-main > h1 {
-    color: red;
-}
-/*titres*/
-h1{
+main > #presentation > div > h1 {
 
 }
 
-h2{
-
-}
-
-/*menu déroulant*/
-nav{
-    margin:auto;
-}
-
-div{
-
-}
-/*liens*/
-a:link{
-
-}
-a:visited{
-
-}
-a:hover{
-
-}
