@@ -42,14 +42,22 @@ header > nav > span > img {
     width: 50px;
 }
 
-nav a {
+header > nav a {
     text-decoration: none;
     color: #ffffff;
     text-align: left;
     font-family: coolvetica_rg, serif;
 }
 
-nav a:hover {
+header > nav > div {
+    height: 100%;
+}
+
+header > nav > div > div {
+    align-items: center;
+}
+
+header > nav > div > div:hover, header > nav > div .submenu a:hover {
     text-decoration: underline;
 }
 
@@ -66,6 +74,10 @@ nav a:hover {
     padding: 5px;
     width: 90%;
     align-self: center;
+}
+
+.submenu {
+    opacity: 80%;
     z-index: -1;
 }
 
@@ -74,10 +86,7 @@ nav a:hover {
     top: 0;
     border-top-right-radius: 10px;
     width: auto;
-}
-
-.submenu {
-    opacity: 80%;
+    z-index: -2;
 }
 
 .subparent:hover > .submenu, .subparent2:hover > .submenu2 {
@@ -112,16 +121,28 @@ nav div {
 }
 
 /*animation heheh*/
-.subparent:hover > .submenu {
-    animation-name: example;
+.subparent:hover > .submenu, .subparent2:hover > .submenu2 {
     animation-duration: 0.4s;
     animation-timing-function: linear;
     animation-direction: alternate;
 }
 
-@keyframes example {
-    0%   {left:0px; top:-150px;}
-    100% {left:0px; top:100%;}
+.subparent:hover > .submenu {
+    animation-name: submenu;
+}
+
+.subparent2:hover > .submenu2 {
+    animation-name: submenu2;
+}
+
+@keyframes submenu {
+    0%   {left:0; top:-150px;}
+    100% {left:0; top:100%;}
+}
+
+@keyframes submenu2 {
+    0%   {left:0; top:-100%;}
+    100% {left:100px; top:0;}
 }
 
 /* Contenus principaux */
