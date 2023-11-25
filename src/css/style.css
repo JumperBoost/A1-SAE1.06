@@ -13,7 +13,11 @@ p{
     width: 80%;
 
 }
-
+/*titres*/
+.pagesdifferentes{
+    display:flex;
+    flex-direction: row;
+}
 /*menu déroulant*/
 header > nav {
     position: absolute;
@@ -57,7 +61,7 @@ header > nav > div > div {
     align-items: center;
 }
 
-header > nav > div > div:hover, header > nav > div .submenu a:hover {
+header > nav > div a:hover {
     text-decoration: underline;
 }
 
@@ -76,9 +80,14 @@ header > nav > div > div:hover, header > nav > div .submenu a:hover {
     align-self: center;
 }
 
+.subparent {
+    background-color: #0008ff;
+    transform-style: preserve-3d;
+}
+
 .submenu {
     opacity: 80%;
-    z-index: -1;
+    transform: translateZ(-10px)
 }
 
 .submenu2 {
@@ -86,7 +95,6 @@ header > nav > div > div:hover, header > nav > div .submenu a:hover {
     top: 0;
     border-top-right-radius: 10px;
     width: auto;
-    z-index: -2;
 }
 
 .subparent:hover > .submenu, .subparent2:hover > .submenu2 {
@@ -116,15 +124,19 @@ nav div {
     display: flex;
 }
 
-.subparent, header > nav > div > div:not(:first-child) {
+.subparent, header > nav > div > div:not(:first-child), nav > div:not(:nth-child(1n)) {
     border-left: 1px solid white;
 }
 
 /*animation heheh*/
-.subparent:hover > .submenu, .subparent2:hover > .submenu2 {
+.subparent:hover > .submenu, .subparent2:hover > .submenu2, .hamburger:hover > #menuhamburger{
     animation-duration: 0.4s;
     animation-timing-function: linear;
     animation-direction: alternate;
+}
+
+.hamburger:hover > #menuhamburger{
+    animation-duration: 0.2s;
 }
 
 .subparent:hover > .submenu {
@@ -135,14 +147,84 @@ nav div {
     animation-name: submenu2;
 }
 
+.hamburger:hover > #menuhamburger {
+    animation-name: menuhamburger;
+}
+
 @keyframes submenu {
     0%   {left:0; top:-150px;}
+    100% {left:0; top:100%;}
+}
+
+@keyframes menuhamburger {
+    0%   {left:100%; top:100%;}
     100% {left:0; top:100%;}
 }
 
 @keyframes submenu2 {
     0%   {left:0; top:-100%;}
     100% {left:100px; top:0;}
+}
+
+/*menu hamburger*/
+.hamburger {
+    position:relative;
+    display:none;
+    right:0;
+    margin-left:auto;
+    border:none;
+}
+
+.hamburger > div, .hamenu {
+    flex-direction:column;
+    display:none;
+}
+
+.hamburger:hover #menuhamburger{
+    display:flex;
+}
+
+#menuhamburger {
+    position:absolute;
+    right: 0;
+    top:68px;
+    opacity:100%;
+    background-color: #0008ff;
+    padding: 5px;
+    text-align:center;
+    z-index:-1;
+}
+
+.hamenu {
+    display:none;
+    position: absolute;
+    right:100%;
+    top:0;
+    background-color:#0008ff;
+    padding:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.hamenu > div {
+    padding:5px;
+}
+
+.hamparent {
+    padding: 10px;
+}
+.hamparent:hover .hamenu{
+    display:flex;
+}
+
+.hamburger:hover{
+    cursor:pointer;
+}
+
+@media(max-width:640px){
+    .hamburger {display:flex}
+    nav > div:not(.hamburger) {display:none}
 }
 
 /* Contenus principaux */
@@ -185,3 +267,54 @@ a:hover{
 
 }
 /*audio*/
+
+/*footer*/
+footer {
+    background-color:#0008ff;
+    display:flex;
+    width: 100%;
+    height:60px;
+}
+
+footer > #topsecret-logo {
+    height: 5vw;
+    width: 5.5vw;
+    margin: 2vw;
+}
+
+footer > #reseaux {
+    margin: 0 auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+}
+
+footer > #develop {
+    color:white;
+    margin: auto 1vw auto 0;
+    text-align: center;
+    border: 0.12vw solid white;
+}
+
+footer > #develop h3, footer > #develop > div p {
+    margin: 0.5vw;
+}
+
+footer > #develop h3 {
+    font-size: 5px;
+    letter-spacing: 0.4vw;
+}
+
+footer > #develop > div p {
+    font-size: 10px;
+    letter-spacing: 0.1vw;
+}
+
+footer > #develop > div {
+    /* On divise l'espace en grille de 2 colonnes */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 5px;
+}
+/* Fin footer */
