@@ -76,7 +76,7 @@ header > nav > div a:hover {
     border-bottom-right-radius: 10px;
     flex-direction: column;
     padding: 5px;
-    width: 90%;
+    width: 92%;
     align-self: center;
 }
 
@@ -222,7 +222,7 @@ nav div {
     cursor:pointer;
 }
 
-@media(max-width:640px){
+@media all and (max-width:640px){
     .hamburger {display:flex}
     nav > div:not(.hamburger) {display:none}
 }
