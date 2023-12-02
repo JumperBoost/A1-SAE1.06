@@ -1,0 +1,31 @@
+.info1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left:20px;
+    color:black;
+}
+
+.info2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+article {
+    background-color: #15ABFF;
+    height: 800px;
+    border:1px solid #15ABFF;
+}
+
+
+/*bouton*/
+.envoyer{
+    padding: 20px;
+    font-size:15px;
+    border-radius: 30px;
+}
+.envoyer:hover{
+    cursor: pointer;
+    font-size:18px;
+}

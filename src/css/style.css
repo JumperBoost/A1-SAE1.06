@@ -1,7 +1,14 @@
 /*structure*/
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #15ABFF;
     margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    flex-grow: 0;
 }
 
 /*texte*/
@@ -108,9 +115,9 @@ header > nav > div a:hover {
     justify-content: center;
  }
 
- .submenu > div > a, .submenu2 > div > a {
+.submenu > div > a, .submenu2 > div > a {
     text-align:center;
- }
+}
 
 header > nav > div:not(:last-child) {
     margin-left: 10px;
@@ -128,15 +135,17 @@ nav div {
     border-left: 1px solid white;
 }*/
 
-/*animation heheh*/
-.subparent:hover > .submenu, .subparent2:hover > .submenu2, .hamburger:hover > #menuhamburger{
+/*animation*/
+.subparent:hover > .submenu, .subparent2:hover > .submenu2, .hamburger:hover > #menuhamburger {
     animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 
 .hamburger:hover > #menuhamburger{
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
+    animation-name: menuhamburger;
 }
 
 .subparent:hover > .submenu {
@@ -147,8 +156,8 @@ nav div {
     animation-name: submenu2;
 }
 
-.hamburger:hover > #menuhamburger {
-    animation-name: menuhamburger;
+.puce:hover {
+    animation-name: puce;
 }
 
 @keyframes submenu {
@@ -166,12 +175,18 @@ nav div {
     100% {left:100px; top:0;}
 }
 
+@keyframes puce {
+    0% {rotate:90deg;}
+    100%{rotate:180deg;}
+}
+
 /*menu hamburger*/
 .hamburger {
     position:absolute;
     display:none;
     width:100%;
     box-sizing: border-box;
+    height:100%;
 }
 
 .hamburger > div, .hamenu {
@@ -189,9 +204,8 @@ nav div {
 
 #menuhamburger {
     position: absolute;
-    opacity: 100%;
     background-color: #0008ff;
-    padding: 5px 0 20px 0;
+    padding: 5px 0 90% 0;
     text-align:center;
     top:68px;
     width: 100%;
@@ -203,9 +217,10 @@ nav div {
 #menuhamburger > div:not(:last-child) {
     border-bottom: 1px solid white;
 }
+
 #menuhamburger > div {
     justify-content: center;
-    padding:10px;
+    padding: 10px 0 0 0;
 }
 
 .hamenu {
@@ -214,33 +229,40 @@ nav div {
     padding:10px;
     justify-content: stretch;
     text-align:center;
+    background-color: #0008d9;
+    width:100%;
+    height:100%;
+    align-self:flex-end;
+    top:0;
 }
 
 .hamenu > div {
-    padding:5px;
-    border: 1px solid white;
+    padding:5px 0 5px 0;
     justify-content: center;
 }
 
 .hamenu > a {
-    border-bottom: 1px solid white;
     width:auto;
+    align-items: center;
 }
 
 .hamparent {
-    padding: 10px;
+    align-items: center;
     flex-direction: column;
-    align-items: stretch;
 }
-.hamparent > a {
-    justify-content: center;
+.hamparent > a, .hamparent > div:first-child > a {
+    align-items: center;
+    width:100px;
 }
 
-#menuhamburger:hover, .hamparent > a:hover ~ .hamenu, .hamburger > img:hover ~ #menuhamburger, .hamenu:hover {
+#menuhamburger:hover, .hamburger > img:hover ~ #menuhamburger, .hamenu:hover {
     display:flex;
 }
-#menuhamburger a, .hamparent {
-    border: solid;
+
+.puce {
+    width:20px;
+    padding:20px;
+    rotate:90deg;
 }
 
 @media screen and (max-width:640px){
@@ -250,6 +272,7 @@ nav div {
 
 /* Contenus principaux */
 main {
+    flex: 1 1 auto;
     text-align: center;
     color: white;
     margin-top: 70px;
@@ -258,19 +281,27 @@ main {
 main > #contents {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
 }
 
 main > #contents > div:first-child {
+    width: 100%;
     background-color: white;
     color: black;
-    flex-shrink: 2;
+    flex-shrink: 1;
 }
 
 main > #contents > div:last-child {
     background-color: grey;
     width: 40%;
-    flex-shrink: 1;
+    flex-shrink: 2;
 }
+
+main > #contents > div:first-child > article {
+
+}
+
+
 
 /*liens*/
 a:link{
@@ -294,6 +325,7 @@ footer {
     background-color: #0008ff;
     display: flex;
     padding: 5px 0;
+    flex: 0 1 auto;
 }
 
 footer > #reseaux {
