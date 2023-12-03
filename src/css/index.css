@@ -35,7 +35,6 @@ main > #presentation, main > #presentation-bg {
     z-index:-3;
 }
 
-main > #presentation > div > h1 {
-
+@media screen and (max-width: 1000px){
+    main > #contents > div:first-child > article:last-child > .float_right {float: unset;width:90%;}
 }
-

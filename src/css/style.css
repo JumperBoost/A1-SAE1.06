@@ -30,8 +30,19 @@ header > nav {
     font-size: 30px;
 }
 
-header > nav a:visited{
+header > nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: left;
+    font-family: coolvetica_rg, serif;
+}
+
+header > nav a:visited, header > nav a:hover{
     color:white;
+}
+
+header > nav > div a:hover {
+    text-decoration: underline;
 }
 
 header > nav > span {
@@ -42,13 +53,6 @@ header > nav > span {
 
 header > nav > span > img {
     width: 50px;
-}
-
-header > nav a {
-    text-decoration: none;
-    color: #ffffff;
-    text-align: left;
-    font-family: coolvetica_rg, serif;
 }
 
 header > nav div {
@@ -63,16 +67,12 @@ header > nav > div:first-of-type {
     margin-left: 20px;
 }
 
-header > nav > div:first-of-type a {
+header > nav > div:first-of-type a { /*barre nav espace entre les a*/
     margin: 0 15px;
 }
 
-header > nav > div > div {
+header > nav > div > div { /*barre nav texte au milieu vertical*/
     align-items: center;
-}
-
-header > nav > div a:hover {
-    text-decoration: underline;
 }
 
 /* Sous-menus */
@@ -80,14 +80,10 @@ header > nav > div a:hover {
     display: none;
     position: absolute;
     background-color: #0008ff;
-    top: 100%;
-    left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     flex-direction: column;
-    padding: 5px;
-    width: 92%;
-    align-self: center;
+    padding: 5px 0;
 }
 
 .subparent {
@@ -96,20 +92,20 @@ header > nav > div a:hover {
 }
 
 .submenu {
-    opacity: 80%;
-    transform: translateZ(-10px)
+    transform: translateZ(-10px);
+    top:100%;
+    width: 100%;
+    left: 0;
 }
 
 .submenu2 {
     left: 100%;
-    top: 0;
     border-top-right-radius: 10px;
     width: auto;
 }
 
 .subparent:hover > .submenu, .subparent2:hover > .submenu2 {
     display: flex;
-    background-color:#0008ff;
 }
 
 .submenu > div, .submenu2 > div {
@@ -125,47 +121,6 @@ header > nav > div a:hover {
 /*.subparent, header > nav > div > div:not(:first-child), nav > div > div:not(:nth-child(n)) {
     border-left: 1px solid white;
 }*/
-
-/*animation*/
-.animation, .subparent:hover > .submenu, .subparent2:hover > .submenu2, .hamburger:hover > #menuhamburger {
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-}
-
-.hamburger:hover > #menuhamburger{
-    animation-duration: 0.5s;
-    animation-name: menuhamburger;
-}
-
-.subparent:hover > .submenu {
-    animation-name: submenu;
-}
-
-.subparent2:hover > .submenu2 {
-    animation-name: submenu2;
-}
-
-@keyframes submenu {
-    0%   {left:0; top:-150px;}
-    100% {left:0; top:100%;}
-}
-
-@keyframes menuhamburger {
-    0%   {left:100%; top:100%;}
-    100% {left:0; top:100%;}
-}
-
-@keyframes submenu2 {
-    0%   {left:0; top:-100%;}
-    100% {left:100px; top:0;}
-}
-
-@keyframes puce {
-    0% {rotate:90deg;}
-    100%{rotate:180deg;}
-}
 
 /*menu hamburger*/
 .hamburger {
@@ -254,6 +209,47 @@ header > nav > div a:hover {
 @media screen and (max-width:640px){
     .hamburger {display:flex}
     nav > div:not(.hamburger) {display:none}
+}
+
+/*animation*/
+.animation, .subparent:hover > .submenu, .subparent2:hover > .submenu2, .hamburger:hover > #menuhamburger {
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.hamburger:hover > #menuhamburger{
+    animation-duration: 0.5s;
+    animation-name: menuhamburger;
+}
+
+.subparent:hover > .submenu {
+    animation-name: submenu;
+}
+
+.subparent2:hover > .submenu2 {
+    animation-name: submenu2;
+}
+
+@keyframes submenu {
+    0%   {left:0; top:-150px;}
+    100% {left:0; top:100%;}
+}
+
+/*@keyframes submenu2 {
+    0%   {left:0; top:-100%;}
+    100% {left:100px; top:0;}
+}*/
+
+@keyframes menuhamburger {
+    0%   {left:100%; top:100%;}
+    100% {left:0; top:100%;}
+}
+
+@keyframes puce {
+    0% {rotate:90deg;}
+    100%{rotate:180deg;}
 }
 
 /* Contenus principaux */
