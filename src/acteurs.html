@@ -12,20 +12,30 @@
 <body>
 <header>
     <nav>
-        <span><img src="img/logo.png" alt="Logo"/></span>
+        <span><img src="img/logo.png" alt="Logo"></span>
         <div>
             <div><a href="index.html">Accueil</a></div>
-            <div class="subparent"><a href="acteurs.html">Acteurs</a>
+            <div class="subparent"><a href="#">Acteurs</a>
                 <div class="submenu">
-                    <div><a href="acteurs.html#impactes">Impactés</a></div>
-                    <div><a href="acteurs.html#politiques">Politiques</a></div>
-                    <div><a href="acteurs.html#entreprises">Entreprises</a></div>
+                    <div><a href="#impactes">Impactés</a></div>
+                    <div><a href="#politiques">Politiques</a></div>
+                    <div><a href="#entreprises">Entreprises</a></div>
+                    <div class="subparent2">
+                        <a href="#pestel">Pestel</a>
+                        <div class="submenu2">
+                            <div><a href="#pol">Politique</a></div>
+                            <div><a href="#eco">Économique</a></div>
+                            <div><a href="#socu">Socio-Culturel</a></div>
+                            <div><a href="#techno">Technologique</a></div>
+                            <div><a href="#envi">Environnemental</a></div>
+                            <div><a href="#legal">Légal</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="subparent"><a href="impacts.html">Impacts</a>
                 <div class="submenu">
-                    <div><a href="impacts.html#facteurs">Facteurs</a></div>
-                    <div class="subparent2"><a href="impacts.html#impactsnourissons">Impacts 0-5ans</a>
+                    <div class="subparent2"><a href="impacts.html#facteurs">Facteurs</a>
                         <div class="submenu2">
                             <div><a href="impacts.html#contenu">Contenu</a></div>
                             <div><a href="impacts.html#interactivite">L’interactivité</a></div>
@@ -33,6 +43,7 @@
                             <div><a href="impacts.html#attention">L’attention sur l’écran</a></div>
                         </div>
                     </div>
+                    <div><a href="impacts.html#impactsnourissons">Impacts 0-5ans</a></div>
                     <div class="subparent2"><a href="impacts.html#generaux">Impacts généraux</a>
                         <div class="submenu2">
                             <div><a href="impacts.html#physique">Troubles physiques</a></div>
@@ -44,19 +55,20 @@
             </div>
             <div><a href="contact.html">Contact</a></div>
         </div>
-        <div class="hamburger">
+        <div id="hamburger">
             <img src="img/burger.png" alt="burger">
             <div id="menuhamburger">
                 <div><a href="index.html">Accueil</a></div>
                 <div class="hamparent">
                     <div>
                         <img src="img/puce-triangle.png" alt="Logo puce">
-                        <a href="acteurs.html">Acteurs</a>
+                        <a href="#">Acteurs</a>
                     </div>
                     <div class="hamenu">
-                        <div><a href="#">Impactés</a></div>
-                        <div><a href="#">Politiques</a></div>
-                        <div><a href="#">Entreprises</a></div>
+                        <div><a href="#impactes">Impactés</a></div>
+                        <div><a href="#politiques">Politiques</a></div>
+                        <div><a href="#entreprises">Entreprises</a></div>
+                        <div><a href="#pestel">Pestel</a></div>
                     </div>
                 </div>
                 <div class="hamparent">
@@ -65,9 +77,9 @@
                         <a href="impacts.html">Impacts</a>
                     </div>
                     <div class="hamenu">
-                        <div><a href="#">Facteurs</a></div>
-                        <div><a href="">Impacts généraux</a></div>
-                        <div><a href="">Conclusion</a></div>
+                        <div><a href="impacts.html#facteurs">Facteurs</a></div>
+                        <div><a href="impacts.html#generaux">Impacts généraux</a></div>
+                        <div><a href="impacts.html#conclu">Conclusion</a></div>
                     </div>
                 </div>
                 <div><a href="contact.html">Contact</a></div>
@@ -82,18 +94,21 @@
             <article id="impactes">
                 <h2>Impactés</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Utenim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    La moyenne du taux d’écran moyen auxquels les enfants sont soumis dépend
+                    de beaucoup de facteurs différents, notamment les facteurs socio-démographiques.
+                    Cette étude étudie le temps d’écran passé par enfants des âges de 2ans, 3ans et
+                    demi, et 5ans et demi selon les origines familiales, lieu de naissance et niveau
+                    d’étude de la mère, la région de résidence et le sexe de l’enfant. En moyenne,
+                    les enfants de 2ans passent 49min/j, les enfants de 3,5 ans passent 69min/j et les
+                    enfants de 5,5 ans passent 83min/j. Plus les enfants ont des grands-parents nés à
+                    l’étranger, plus leur temps d’écran moyen est élevé, avec un temps supérieur d’environ
+                    30 minutes chez les enfants ayant trois-quatre grands-parents nés à l’étranger par
+                    rapport à ceux ayant quatre grands-parents nés en France. Les enfants dont la mère est
+                    née de Maghreb, Turquie et Afrique subsaharienne passaient en moyenne 30 à 50min de plus
+                    que la moyenne selon l’âge. Le temps d’écran en Bretagne était le plus faible en Bretagne
+                    et le plus élevé dans les Hauts-de-France. Les différences entre le sexe étaient faible,
+                    mais les garçons ont été observé de passer plus de temps devant les écrans, allant jusqu’à
+                    un écart de 10min pour les 5,5ans.
                 </p>
             </article>
             <article id="politiques">
@@ -130,19 +145,74 @@
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </article>
+            <article id="pestel">
+                <h2>Analyse PESTEL</h2>
+                <div id="pestel_box">
+                    <div id="pol">
+                        <h5>Politique</h5>
+                        <p>
+                            Les régulations gouvernementales sur le contenu numérique influencent
+                            l'utilisation des écrans chez les enfants.
+                        </p>
+                    </div>
+                    <div id="eco">
+                        <h5>Economique</h5>
+                        <p>
+                            Les industries technologiques et éducatives dépendent
+                            de l'utilisation des écrans par les enfants, avec des implications financières importantes.
+                        </p>
+                    </div>
+                    <div id="socu">
+                        <h5>Socio-culturel</h5>
+                        <p>
+                            Les normes sociales et les perceptions de l'utilisation des écrans varient,
+                            façonnées par les influences des pairs, les attentes parentales et les valeurs culturelles.
+                        </p>
+                    </div>
+                    <div id="techno">
+                        <h5>Technologique</h5>
+                        <p>
+                            L'évolution rapide de la technologie crée de nouvelles opportunités et défis,
+                            influençant la nature des contenus éducatifs et des applications interactives.
+                        </p>
+                    </div>
+                    <div id="envi">
+                        <h5>Environmental</h5>
+                        <p>
+                            Les implications environnementales de la production et de l'élimination
+                            des dispositifs électroniques, ainsi que la durabilité des technologies
+                            utilisées par les enfants, doivent être considérées.
+                        </p>
+                    </div>
+                    <div id="legal">
+                        <h5>Légal</h5>
+                        <p>
+                            Les lois sur la protection de la vie privée des enfants
+                            en ligne et d'autres aspects juridiques entourant l'utilisation des écrans
+                            jouent un rôle important dans le débat.
+                        </p>
+                    </div>
+                </div>
+            </article>
         </div>
         <div>
             <div>
                 <h2>ÉCOUTEZ NOTRE DERNIER PODCAST</h2>
                 <audio src="audio/podcast.mp3" controls></audio>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
                 <img src="img/podcast_logo.jpg" alt="Logo Podcast">
             </div>
             <div>
-                <img src="img/pub_nuitdelinfo2023.jpg" alt="Publicité Nuit de l'info 2023">
-                <h3><u><i>Sponsorisé</i></u></h3>
+                <a href="https://www.nuitdelinfo.com/">
+                    <img src="img/pub_nuitdelinfo2023.jpg" alt="Publicité Nuit de l'info 2023">
+                    <h3>
+                        <u><i>Sponsorisé</i></u>
+                    </h3>
+                </a>
             </div>
         </div>
     </div>

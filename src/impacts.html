@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <title>Impacts - Impact sociocognitif sur l'enfant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/impacts.css"/>
-    <link rel="icon" href="img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/impacts.css">
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
 <header>
     <nav>
-        <span><img src="img/logo.png" alt="Logo"/></span>
+        <span><img src="img/logo.png" alt="Logo"></span>
         <div>
             <div><a href="index.html">Accueil</a></div>
             <div class="subparent"><a href="acteurs.html">Acteurs</a>
@@ -20,31 +20,42 @@
                     <div><a href="acteurs.html#impactes">Impactés</a></div>
                     <div><a href="acteurs.html#politiques">Politiques</a></div>
                     <div><a href="acteurs.html#entreprises">Entreprises</a></div>
+                    <div class="subparent2">
+                        <a href="acteurs.html#pestel">Pestel</a>
+                        <div class="submenu2">
+                            <div><a href="acteurs.html#pol">Politique</a></div>
+                            <div><a href="acteurs.html#eco">Économique</a></div>
+                            <div><a href="acteurs.html#socu">Socio-Culturel</a></div>
+                            <div><a href="acteurs.html#techno">Technologique</a></div>
+                            <div><a href="acteurs.html#envi">Environnemental</a></div>
+                            <div><a href="acteurs.html#legal">Légal</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="subparent"><a href="impacts.html">Impacts</a>
+            <div class="subparent"><a href="#">Impacts</a>
                 <div class="submenu">
-                    <div><a href="impacts.html#facteurs">Facteurs</a></div>
-                    <div class="subparent2"><a href="impacts.html#impactsnourissons">Impacts 0-5ans</a>
+                    <div class="subparent2"><a href="#facteurs">Facteurs</a>
                         <div class="submenu2">
-                            <div><a href="impacts.html#contenu">Contenu</a></div>
-                            <div><a href="impacts.html#interactivite">L’interactivité</a></div>
-                            <div><a href="impacts.html#comportgardienvisio">Comportement du gardien</a></div>
-                            <div><a href="impacts.html#attention">L’attention sur l’écran</a></div>
+                            <div><a href="#contenu">Contenu</a></div>
+                            <div><a href="#interactivite">L’interactivité</a></div>
+                            <div><a href="#comportgardienvisio">Comportement du gardien</a></div>
+                            <div><a href="#attention">L’attention sur l’écran</a></div>
                         </div>
                     </div>
-                    <div class="subparent2"><a href="impacts.html#generaux">Impacts généraux</a>
+                    <div><a href="#impactsnourissons">Impacts 0-5ans</a></div>
+                    <div class="subparent2"><a href="#generaux">Impacts généraux</a>
                         <div class="submenu2">
-                            <div><a href="impacts.html#physique">Troubles physiques</a></div>
-                            <div><a href="impacts.html#mentaux">Troubles mentaux</a></div>
+                            <div><a href="#physique">Troubles physiques</a></div>
+                            <div><a href="#mentaux">Troubles mentaux</a></div>
                         </div>
                     </div>
-                    <div><a href="impacts.html#conclu">Conclusion</a></div>
+                    <div><a href="#conclu">Conclusion</a></div>
                 </div>
             </div>
             <div><a href="contact.html">Contact</a></div>
         </div>
-        <div class="hamburger">
+        <div id="hamburger">
             <img src="img/burger.png" alt="burger">
             <div id="menuhamburger">
                 <div><a href="index.html">Accueil</a></div>
@@ -54,20 +65,21 @@
                         <a href="acteurs.html">Acteurs</a>
                     </div>
                     <div class="hamenu">
-                        <div><a href="#">Impactés</a></div>
-                        <div><a href="#">Politiques</a></div>
-                        <div><a href="#">Entreprises</a></div>
+                        <div><a href="acteurs.html#impactes">Impactés</a></div>
+                        <div><a href="acteurs.html#politiques">Politiques</a></div>
+                        <div><a href="acteurs.html#entreprises">Entreprises</a></div>
+                        <div><a href="acteurs.html#pestel">Pestel</a></div>
                     </div>
                 </div>
                 <div class="hamparent">
                     <div>
                         <img src="img/puce-triangle.png" alt="Logo puce">
-                        <a href="impacts.html">Impacts</a>
+                        <a href="#">Impacts</a>
                     </div>
                     <div class="hamenu">
-                        <div><a href="#">Facteurs</a></div>
-                        <div><a href="">Impacts généraux</a></div>
-                        <div><a href="">Conclusion</a></div>
+                        <div><a href="#facteurs">Facteurs</a></div>
+                        <div><a href="#generaux">Impacts généraux</a></div>
+                        <div><a href="#conclu">Conclusion</a></div>
                     </div>
                 </div>
                 <div><a href="contact.html">Contact</a></div>
@@ -81,77 +93,98 @@
         <div>
             <article id="facteurs">
                 <h2>Facteurs</h2>
-                <div class="subclass">
-                    <div id="contenu">
-                        <h3>Contenu de l’écran</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div id="interactivite">
-                        <h3>L’interactivité de l’écran</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div id="comportgardienvisio">
-                        <h3>Comportement du gardien pendant le visionnage</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div id="attention">
-                        <h3>L’attention sur l’écran</h3>
-                        <p class="texte1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                            pellentesque ipsum id tortor pharetra, sed tincidunt neque
-                            imperdiet. Nullam vel mi congue magna vulputate ultricies. Fusce
-                            porta, justo ut volutpat mollis, quam justo viverra eros, sit amet
-                            faucibus sapien lectus eget ex. Fusce vel leo vestibulum,
-                            venenatis orci nec, congue risus. Nam quam orci, pretium in nibh
-                            eget, sollicitudin lobortis dolor. Morbi leo nibh, interdum et
-                            feugiat id, tincidunt nec ligula. Aliquam tempor ipsum quis est
-                            vulputate, id convallis erat vestibulum. Donec iaculis urna et
-                            massa finibus tempor. Duis in nunc sed augue efficitur finibus.
-                            Vivamus quis aliquam orci. Phasellus gravida orci non orci
-                            bibendum sodales vitae quis felis. Duis quis vehicula orci. Nulla
-                            non dui varius, laoreet nisl ut, finibus turpis. Nam vel feugiat
-                            risus, eu tempus sapien. Mauris ullamcorper condimentum posuere.
-                            Phasellus id sem nec felis hendrerit facilisis id ut dui.
-                            Pellentesque non purus nisi. Vivamus nec arcu consectetur, maximus
-                            mauris egestas, porta lectus. Aliquam ac convallis magna.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article id="impactsnourissons">
-                <h2>Impacts sur les enfants de 0 à 5ans</h2>
+                <h3 id="contenu">Contenu de l’écran</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    L'impact de l'écran sur les enfants dépend essentiellement du contenu auquel ils sont exposés.
+                    Les contenus spécifiquement conçus pour les enfants ont démontré des effets bénéfiques, notamment
+                    en ce qui concerne la préparation à l'école. Des études indiquent que les enfants de 2 ans exposés
+                    à des programmes éducatifs adaptés à leur âge obtiennent des scores plus élevés en termes de
+                    connaissances générales (lettres, chiffres, couleurs, etc.) à l'âge de 3-4 ans, comparativement à
+                    ceux exposés à des programmes destinés à un public plus âgé.
+                </p>
+                <p>
+                    Cependant, une surconsommation de programmes grand public à l'âge de 2 ans est associée à des
+                    performances moindres en mathématiques et en vocabulaire réceptif. En ce qui concerne les fonctions
+                    exécutives, une exposition excessive à l'écran est liée à un contrôle inhibiteur moins efficace,
+                    mais le contenu joue un rôle déterminant. Les enfants qui visionnent des contenus spécialement
+                    conçus pour eux ne présentent ni bénéfices ni inconvénients notables.
+                </p>
+                <p>
+                    En ce qui concerne le langage, les enfants exposés à des animations détaillées et réalistes
+                    quotidiennement peuvent connaître un retard dans l'acquisition du langage.
+                    En revanche, ceux qui visionnent des contenus moins complexes ne semblent pas rencontrer de
+                    problèmes particuliers dans ce domaine. Ainsi, la nature du contenu semble jouer un rôle crucial
+                    dans l'impact global de l'écran sur le développement des enfants.
+                </p>
+
+                <h3 id ="interactivite">L’interactivité de l’écran</h3>
+                <p>
+                    Lorsque les enfants interagissent physiquement avec des écrans, leur apprentissage semble être plus
+                    efficace que dans un contexte de salle de classe. Cependant, ces effets varient en fonction de
+                    plusieurs facteurs tels que l'âge et le type de contenu. Par exemple, les enfants plus âgés semblent
+                    mieux apprendre de cette manière, tandis que les plus jeunes montrent une préférence pour les sujets
+                    liés aux sciences par rapport à d'autres matières. Chaque groupe semble bénéficier davantage de la
+                    manipulation physique par rapport à l'utilisation de simples écrans non interactifs.
+                </p>
+                <p>
+                    Un défi subsiste quant à la capacité des enfants à appliquer ce qu'ils ont appris à partir d'écrans
+                    dans le monde réel, nécessitant parfois une communication occasionnelle avec un expérimentateur à
+                    l'écran. Des études indiquent que les enfants de 24 à 30 mois ont besoin d'un partenaire physique
+                    pour apprendre, tandis que ceux de 30 mois et plus peuvent apprendre sans cette présence physique.
+                </p>
+                <p>
+                    Les interactions spécifiques jouent également un rôle crucial. Les interactions parent-enfant
+                    semblent améliorer l'apprentissage avec des écrans interactifs et favorisent le transfert des
+                    connaissances dans la vie réelle. De même, les interactions entre pairs suscitent plus d'intérêt
+                    et de motivation pour l'apprentissage.
+                </p>
+                <p>
+                    Cependant, il reste incertain si les écrans interactifs entravent ou favorisent les interactions
+                    sociales, et les études sont limitées pour les enfants de moins de 2 ans. En résumé, l'apprentissage
+                    à travers des écrans interactifs peut être bénéfique, mais son efficacité dépend du contenu et de
+                    divers facteurs, et des recherches supplémentaires sont nécessaires.
+                </p>
+
+                <h3 id="comportgardienvisio">Comportement du gardien pendant le visionnage</h3>
+                <p>
+                    La participation des parents aux programmes télévisés et leurs commentaires ont un effet positif
+                    sur l'attention des enfants. Les programmes éducatifs établissent des bases pour le jeu et la
+                    créativité entre parents et enfants. Bien qu'il y ait peu d'études sur les bébés en ce qui concerne
+                    les écrans interactifs, des preuves indiquent que les enfants apprennent davantage avec ces écrans
+                    par rapport à la télévision. Cependant, l'utilisation d'écrans interactifs réduit considérablement
+                    l'interaction entre le soignant et l'enfant. Cela est préoccupant car ces interactions sont
+                    essentielles au développement des compétences cognitives. En résumé, les émissions télévisées créent
+                    un terrain de jeu propice à la communication et à la stimulation entre parents et enfants.
+                </p>
+                <h3 id="attention">L’attention sur l’écran</h3>
+                <p>
+                    Si l'écran est activé dans le fond, cela à bien plus d'impacts négatifs que si le nourisson porte
+                    tout son interêt sur l'écrean. Les changements audiovisuels obligent l'enfant à s'orienter de manière
+                    répétée vers l'écran, ce qui épuise les ressources cognitives nécessaires à l'instanciation et à
+                    l'exécution des schémas d'action.
+                </p>
+            </article>
+            <article>
+                <h2 id="impactsnourissons">Impacts sur les enfants de 0 à 5ans</h2>
+                <p>
+                    L'impact des écrans sur les enfants âgés de 0 à 5 ans est un sujet de préoccupation croissante dans
+                    le domaine de la petite enfance. Voici un résumé des principaux points à considérer :
+                </p>
+                <ol>
+                    <li><strong>Développement cérébral et physique :</strong> Les premières années de la vie sont cruciales pour le développement du cerveau et des compétences motrices. Une exposition excessive aux écrans peut influencer négativement ces aspects du développement.</li>
+                    <li><strong>Langage et communication :</strong> L'utilisation précoce et prolongée des écrans peut affecter le développement du langage et de la communication. Les interactions en face à face sont essentielles pour l'acquisition des compétences linguistiques.</li>
+                    <li><strong>Sommeil :</strong> L'exposition aux écrans, surtout avant le coucher, peut perturber le sommeil des jeunes enfants, ce qui peut avoir des conséquences sur leur santé physique et mentale.</li>
+                    <li><strong>Comportement :</strong> Une utilisation excessive des écrans peut être liée à des problèmes de comportement, tels que l'agressivité, l'impulsivité et des difficultés d'attention, bien que les recherches sur ce point soient encore en cours.</li>
+                    <li><strong>Apprentissage précoce :</strong> Certains contenus éducatifs sur les écrans peuvent offrir des avantages, mais la qualité du contenu et la durée d'exposition sont cruciales. Des écrans interactifs peuvent parfois être plus bénéfiques que la télévision passive.</li>
+                    <li><strong>Interaction sociale :</strong> Une utilisation excessive des écrans peut compromettre le temps que les enfants passent à interagir avec d'autres enfants et adultes, ce qui est important pour leur développement social et émotionnel.</li>
+                    <li><strong>Guidance parentale :</strong> La façon dont les parents utilisent et supervisent l'utilisation des écrans par leurs enfants joue un rôle crucial dans l'impact global. La participation des parents peut atténuer certains effets négatifs.</li>
+                </ol>
+                <p>
+                    En résumé, bien que des contenus éducatifs adaptés puissent offrir des avantages, une utilisation
+                    excessive et non surveillée des écrans peut avoir des conséquences négatives sur le développement
+                    des enfants de 0 à 5 ans. Il est recommandé aux parents de limiter le temps d'écran, de choisir
+                    attentivement le contenu et de favoriser des activités qui encouragent l'interaction sociale,
+                    physique et le développement cognitif.
                 </p>
             </article>
             <article id="generaux">
@@ -160,25 +193,48 @@
                     <div id="physique">
                         <h3>Troubles physiques</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Les écrans, tels que les smartphones, tablettes, ordinateurs et télévisions, peuvent avoir
+                            divers effets sur la santé physique des enfants. Voici un résumé des principaux troubles
+                            physiques liés à l'utilisation excessive des écrans chez les enfants :
+                        </p>
+                        <ol>
+                            <li><strong>Troubles du sommeil :</strong> L'exposition à la lumière bleue émise par les écrans, surtout le soir, peut perturber le cycle circadien et entraîner des troubles du sommeil. Les enfants peuvent avoir des difficultés à s'endormir et à maintenir un sommeil de qualité.</li>
+                            <li><strong>Fatigue oculaire :</strong> Passer de longues heures devant un écran peut causer une fatigue oculaire, des maux de tête et une sécheresse oculaire. Cela est souvent lié à un effort visuel prolongé et à une diminution du clignotement des yeux.</li>
+                            <li><strong>Problèmes posturaux :</strong> Une utilisation prolongée d'appareils électroniques, en particulier avec une mauvaise posture, peut contribuer à des problèmes musculo-squelettiques tels que des maux de dos, des douleurs cervicales et des troubles de la posture.</li>
+                            <li><strong>Sédentarité :</strong> L'utilisation excessive des écrans peut entraîner un mode de vie sédentaire, contribuant à l'obésité infantile et à d'autres problèmes de santé associés à un manque d'activité physique.</li>
+                            <li><strong>Problèmes de développement :</strong> L'utilisation précoce et excessive des écrans peut avoir un impact sur le développement physique des enfants. Certains experts soulignent des préoccupations concernant l'effet des écrans sur le développement moteur, la coordination et la vision chez les jeunes enfants.</li>
+                            <li><strong>Problèmes de vision :</strong> Bien que la recherche ne soit pas concluante, certains experts suggèrent que l'exposition prolongée aux écrans pourrait être associée à des problèmes de vision, tels que la fatigue oculaire, la myopie et d'autres troubles oculaires.</li>
+                            <li><strong>Problèmes de comportement alimentaire :</strong> L'utilisation d'écrans pendant les repas peut être associée à une alimentation distraite, favorisant de mauvaises habitudes alimentaires et des choix alimentaires moins sains.</li>
+                        </ol>
+                        <p>
+                            Il est important de noter que la clé réside dans une utilisation équilibrée et consciente
+                            des écrans. Les recommandations générales incluent la limitation du temps d'écran, des pauses
+                            fréquentes, une posture appropriée et un environnement de sommeil propice. Les parents et
+                            les éducateurs jouent un rôle essentiel dans la gestion de l'utilisation des écrans chez les
+                            enfants pour minimiser les effets négatifs potentiels sur leur santé physique.
                         </p>
                     </div>
                     <div id="mentaux">
                         <h3>Troubles mentaux</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            L'utilisation excessive des écrans chez les enfants peut être associée à plusieurs troubles mentaux.
+                            Voici un résumé des principaux problèmes mentaux liés à cette utilisation :
+                        </p>
+                        <ol>
+                            <li><strong>Dépendance aux écrans :</strong> Une utilisation excessive des écrans, en particulier des jeux vidéo et des réseaux sociaux, peut contribuer au développement d'une dépendance. Les enfants peuvent avoir du mal à contrôler leur temps d'écran et à s'engager dans d'autres activités.
+                            <li><strong>Problèmes de santé mentale :</strong> Des études suggèrent que l'utilisation intensive des réseaux sociaux peut être associée à des problèmes de santé mentale tels que la dépression, l'anxiété et la baisse de l'estime de soi, en raison de la comparaison constante avec les autres et des pressions sociales en ligne.</li>
+                            <li><strong>Troubles du sommeil :</strong> L'exposition à la lumière des écrans, en particulier avant le coucher, peut perturber le sommeil des enfants, entraînant une fatigue excessive, une irritabilité et éventuellement des problèmes de concentration et d'apprentissage.</li>
+                            <li><strong>Retard du développement émotionnel :</strong> Une exposition précoce et prolongée aux écrans peut affecter le développement émotionnel des enfants en entravant leur capacité à interagir socialement, à comprendre les émotions des autres et à développer des compétences sociales appropriées.</li>
+                            <li><strong>Problèmes de concentration et d'attention :</strong> Une utilisation excessive des écrans, notamment des jeux vidéo, peut contribuer à des problèmes de concentration et d'attention, pouvant affecter les performances scolaires et le comportement.</li>
+                            <li><strong>Isolement social :</strong> L'utilisation intensive des écrans peut entraîner un isolement social, car les enfants peuvent préférer interagir en ligne plutôt qu'en personne, ce qui peut influencer négativement leur développement social.</li>
+                            <li><strong>Cyberintimidation :</strong> L'exposition aux médias sociaux et à d'autres plateformes en ligne augmente le risque de cyberintimidation, ce qui peut avoir des conséquences graves sur la santé mentale des enfants, y compris l'anxiété, la dépression et le retrait social.</li>
+                        </ol>
+                        <p>
+                            Il est essentiel que les parents, les éducateurs et les professionnels de la santé soient
+                            conscients de ces risques et mettent en place des limites appropriées pour l'utilisation
+                            des écrans chez les enfants. Encourager un équilibre entre le temps d'écran et d'autres
+                            activités, ainsi que la communication ouverte sur les expériences en ligne, peut contribuer
+                            à atténuer ces risques.
                         </p>
                     </div>
                 </div>
@@ -187,13 +243,11 @@
             <article id="conclu">
                 <h2>Conclusion</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Les écrans peuvent avoir des impacts négatifs sur les enfants, incluant des troubles du sommeil,
+                    une fatigue oculaire, des problèmes posturaux, une sédentarité accrue, une dépendance potentielle,
+                    des problèmes de santé mentale tels que la dépression et l'anxiété, un retard du développement
+                    émotionnel, des difficultés de concentration, un risque accru d'isolement social et de cyberintimidation.
+                    Il est crucial de promouvoir une utilisation équilibrée des écrans pour atténuer ces impacts.
                 </p>
             </article>
         </div>
@@ -201,14 +255,22 @@
             <div>
                 <h2>ÉCOUTEZ NOTRE DERNIER PODCAST</h2>
                 <audio src="audio/podcast.mp3" controls></audio>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
                 <img src="img/podcast_logo.jpg" alt="Logo Podcast">
             </div>
             <div>
-                <img src="img/pub_nuitdelinfo2023.jpg" alt="Publicité Nuit de l'info 2023">
-                <h3><u><i>Sponsorisé</i></u></h3>
+                <a href="https://www.nuitdelinfo.com/">
+                    <img src="img/pub_nuitdelinfo2023.jpg" alt="Publicité Nuit de l'info 2023">
+                    <h3>
+                        <u>
+                            <i>Sponsorisé</i>
+                        </u>
+                    </h3>
+                </a>
             </div>
         </div>
     </div>

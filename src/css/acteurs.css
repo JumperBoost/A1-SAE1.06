@@ -1,0 +1,63 @@
+/* Box PESTEL */
+#pestel_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#pestel_box > div {
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    hyphens: auto;
+}
+
+#pestel_box > div > h5 {
+    font-size: 30px;
+    margin: 0;
+}
+
+#pestel_box > div > p {
+    font-size: 1.75vw;
+}
+
+#pol {
+    background-color: #38f6e8;
+}
+
+#eco {
+    background-color: #caa7ff;
+}
+
+#socu {
+    background-color: #fff698;
+}
+
+#techno {
+    background-color: #84fa86;
+}
+
+#envi {
+    background-color: #8ea1ff;
+}
+
+#legal {
+    background-color: #faa0a0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #pestel_box > div {
+        width: 80vw;
+        height: 80vw;
+    }
+    #pestel_box > div > h2 { font-size: 8vw; }
+    #pestel_box > div > p { font-size: 6vw; }
+}

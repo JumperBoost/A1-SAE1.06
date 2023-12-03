@@ -1,14 +1,34 @@
 main {
-    margin-top: 90vh;
+    margin-top: 93vh;
 }
 
 /* Présentation principale */
+main > #presentation > div:last-child {
+    position: absolute;
+    bottom: 15%;
+    background-color: rgb(127, 127, 127, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+main > #presentation > div:first-child > h1 {
+    text-shadow: 0 0 15px black;
+}
+
+main > #presentation > div:last-child > a > p {
+    margin: 5px;
+}
+
+main > #presentation > div:last-child > a > img {
+    width: 20%;
+}
 
 main > #presentation-bg {
     background-image: url("../img/presentation1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: -2;
 }
 
 main > #presentation-bg::after {
@@ -22,9 +42,9 @@ main > #presentation-bg::after {
 main > #presentation, main > #presentation-bg {
     text-align: center;
     position: absolute;
-    height: 105%;
+    height: 100%;
     color: white;
-    top: 0;
+    top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -32,9 +52,9 @@ main > #presentation, main > #presentation-bg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index:-3;
 }
 
+/* Responsive */
 @media screen and (max-width: 1000px){
-    main > #contents > div:first-child > article:last-child > .float_right {float: unset;width:90%;}
+    main > #contents > div:first-child > article:last-child > .float_right { float: unset;width:90%; }
 }
