@@ -11,9 +11,9 @@ Projet Controverse - SAE 1.06 | Année 1 | IUT Montpellier-Sète
 **Chaque membre a travaillé de manière égale (à part Amine), et s'est entraîdé avec les autres membres du groupe. Les implications suivantes sont écrites par ordre de priorité.**
 
 
-- Milwenn FRANCEUS--COINTREL (33%) : Page Accueil, pages acteurs, barre de navigation, PESTEL
-- Héloïse RIGAUX (33%) : Barre de navigation, Pages impacts, Page contact
-- Enzo PIGNANELLI (33%) : Page contact, Page footer, PESTEL
+- Milwenn FRANCEUS--COINTREL (33%) : Page Accueil, Page Acteurs, Barre de navigation, PESTEL
+- Héloïse RIGAUX (33%) : Barre de navigation, Page Impacts, Page Contact
+- Enzo PIGNANELLI (33%) : Page Contact, Footer, PESTEL
 - Amine BEN ROMDHANE (0%) : Absent
 
 # Lien vers la page web
