@@ -93,42 +93,45 @@
         <div>
             <article>
                 <h1>Nous contacter</h1>
-                <div>
+                <form action="" method="post">
+                    <div>
+                        <div class="info">
+                            <label for="email">E-mail :</label>
+                            <input id="email" name="email" placeholder="Dubois.Olivier@gmail.com" type="email" required>
+                            <label for="name">Nom :</label>
+                            <input  id="name" name="name" placeholder="Norris" type="text" pattern="[a-zA-Z]+" required>
+                            <label for="prenom">Prénom :</label>
+                            <input id="prenom" name="prenom" placeholder="Chuck" type="text" pattern="[a-zA-Z]+" required>
+                            <label for="numero">Numéro de téléphone :</label>
+                            <input id="numero" name="numero" placeholder="06 12 34 56 78" type="tel"
+                                   pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" required>
+                            <label for="codep">Code postal :</label>
+                            <input id="codep" name="codep" placeholder="34000" type="text" pattern="^(?:0[1-9]|[1-8]\d|9[0-8])\d{3}$" required>
+                            <label for="pays">Pays :</label>
+                            <select id="pays" name="pays" required>
+                                <option value="France">France</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <img src="img/contactimg.png" alt="image avec enfants sur écran">
+                    </div>
                     <div class="info">
-                        <label for="email">E-mail :</label>
-                        <input id="email" name="email" placeholder="Dubois.Olivier@gmail.com" type="text">
-                        <label for="name">Nom :</label>
-                        <input  id="name" name="name" placeholder="Norris" type="text">
-                        <label for="prenom">Prénom :</label>
-                        <input id="prenom" name="prenom" placeholder="Chuck" type="text">
-                        <label for="numero">Numéro de téléphone :</label>
-                        <input id="numero" name="numero" placeholder="06 12 34 56 78" type="tel">
-                        <label for="codep">Code postal :</label>
-                        <input id="codep" name="codep" placeholder="34000" type="text">
-                        <label for="pays">Pays :</label>
-                        <select id="pays" name="pays">
-                            <option value="France">France</option>
-                            <option value="Belgique">Belgique</option>
-                            <option value="Canada">Canada</option>
+                        <label for="communication">Où avez-vous entendu parler de nous ?</label>
+                        <select id="communication" name="communication" required>
+                            <option value="reseau">Reseau sociaux</option>
+                            <option value="internet">Internet</option>
+                            <option value="amis">Amis</option>
                             <option value="Autre">Autre</option>
                         </select>
+                        <label for="date">Date à laquelle vous souhaitez être recontacté</label>
+                        <input id="date" name="date" type="date" required>
+                        <label for="supplementaire">Quelque chose à rajouter ?</label>
+                        <textarea id="supplementaire" name="supplementaire" placeholder="Écrire ici" rows="5" cols="100"></textarea>
+                        <input type="submit" value="Envoyer" checked>
                     </div>
-                    <img src="img/contactimg.png" alt="image avec enfants sur écran">
-                </div>
-                <div class="info">
-                    <label for="communication">Où avez-vous entendu parler de nous ?</label>
-                    <select id="communication" name="communication">
-                        <option value="reseau">Reseau sociaux</option>
-                        <option value="internet">Internet</option>
-                        <option value="amis">Amis</option>
-                        <option value="Autre">Autre</option>
-                    </select>
-                    <label for="date">Date à laquelle vous souhaitez être recontacté</label>
-                    <input id="date" name="date" type="date">
-                    <label for="supplementaire">Quelque chose à rajouter ?</label>
-                    <textarea id="supplementaire" name="supplementaire" placeholder="Écrire ici" rows="5" cols="100"></textarea>
-                    <button>Envoyer</button>
-                </div>
+                </form>
             </article>
         </div>
         <div>
