@@ -29,6 +29,7 @@ header > nav {
 header > nav a {
     text-decoration: none;
     text-align: left;
+    text-shadow: 0 0 10px black;
 }
 
 header > nav a:visited, header > nav a:hover{
@@ -67,6 +68,10 @@ header > nav > div:first-of-type a { /*barre nav espace entre les a*/
 
 header > nav > div > div { /*barre nav texte au milieu vertical*/
     align-items: center;
+}
+
+.page_actuelle {
+    text-decoration: underline red;
 }
 
 /* Sous-menus */
