@@ -7,7 +7,7 @@ Projet Controverse - SAE 1.06 | Année 1 | IUT Montpellier-Sète
 - Enzo PIGNANELLI
 - Amine BEN ROMDHANE
 
-# Implication de chaque Membres
+# Implication de chaque membre
 **Chaque membre a travaillé de manière égale (à part Amine), et s'est entraîdé avec les autres membres du groupe. Les implications suivantes sont écrites par ordre de priorité.**
 
 
@@ -17,4 +17,4 @@ Projet Controverse - SAE 1.06 | Année 1 | IUT Montpellier-Sète
 - Amine BEN ROMDHANE (0%) : Absent
 
 # Lien vers la page web
-https://webinfo.iutmontp.univ-montp2.fr/~franceusm/CTRV_SAE06/
+https://archives.jumperboost.fr/sae1.06/
